@@ -15,6 +15,8 @@ class Square : public Widget
         virtual void draw();
         virtual void handler(int );
         virtual bool is_checked();
+        virtual int getAllapot();
+
 
 
 };

@@ -2,6 +2,9 @@
 #define JATEKMESTER_HPP_INCLUDED
 #include "graphics.hpp"
 #include "Widgets.hpp"
+#include <vector>
+#include <iostream>
+#include "Square.hpp"
 
 using namespace genv;
 
@@ -9,12 +12,12 @@ using namespace genv;
 class Jatekmester
 {
     private:
-
+    int state;
 
     public:
         Jatekmester();
         virtual void handle();
-        virtual void ellenorzo();
+        virtual void ellenorzo(std::vector<std::vector<Square*>> );
 
 };
 

@@ -3,7 +3,7 @@
 #include "graphics.hpp"
 
 using namespace genv;
-
+const int XX = 420, YY= 360;
 Square::Square(int x, int y, int sx, int sy): Widget(x,y,sx,sy)
 {
 allapot=-1;
@@ -26,7 +26,15 @@ gout << move_to(_x+2,_y+2) << color(0,0,255) << box(_size_x-4,_size_y-4);
 
 
 
+
 }
+
+
+int Square::getAllapot()
+{
+    return allapot;
+}
+
 bool Square::is_checked()
 {
     if(allapot==-1)
@@ -52,4 +60,5 @@ allapot=2;
 
 void Square::handle(genv::event ev)
 {
+    allapot=-1;
 }
