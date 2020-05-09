@@ -15,6 +15,7 @@ class Endscreen : public Widget
         virtual void draw();
         virtual void drawgreen();
         virtual void drawblue();
+        virtual void drawdraw();
 
 
 };
